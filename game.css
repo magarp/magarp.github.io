@@ -1,0 +1,517 @@
+#mainMenu {
+  background: url("image/background.jpg");
+  text-align: center;
+  padding: 50px;
+  border: 1px solid black;
+  position: relative;
+  width: 800px;
+  height: 480px;
+  margin: auto;
+}
+
+#settingMenu {
+  background: url("image/background.jpg");
+  text-align: center;
+  padding: 50px;
+  border: 1px solid black;
+  position: relative;
+  width: 800px;
+  height: 480px;
+  margin: auto;
+}
+
+#ruleMenu {
+  background: url("image/background.jpg");
+  padding: 50px;
+  border: 1px solid black;
+  position: relative;
+  width: 800px;
+  height: 480px;
+  margin: auto;
+}
+
+#gameWrapper {
+  background: url("image/background.jpg");
+  padding: 50px;
+  border: 1px solid black;
+  position: relative;
+  width: 800px;
+  height: 480px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  padding: 0px;
+  font-family: Georgia;
+}
+
+#title {
+  font-size: 50px;
+  padding-bottom: 110px;
+  font-weight: bold;
+  font-family: Georgia;
+}
+
+#playButton {
+  height: 50px;
+  width: 200px;
+  font-size: 20px;
+  border-radius: 12px;
+  background-color: #98fb98;
+}
+
+#demoWrapper {
+  background: url("image/background.jpg");
+  padding: 50px;
+  border: 1px solid black;
+  position: relative;
+  width: 800px;
+  height: 480px;
+  margin: auto;
+}
+
+#demoContent {
+  background: white;
+  border: 1px solid black;
+  width: 800px;
+  height: 300px;
+}
+
+#demoButton {
+  height: 50px;
+  width: 200px;
+  font-size: 20px;
+  border-radius: 12px;
+  background-color: #98fb98;
+}
+
+#demo {
+  padding-bottom: 10px;
+}
+
+#demoHistory {
+  font-size: 12px;
+}
+
+#demoHistoryBox {
+  background-image: url("image/history.jpeg");
+  background-size: 100% 100%;
+  display: table-cell;
+  vertical-align: top;
+  width: 250px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.demoCenteredHistory {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  overflow-y: auto;
+  max-height: 260px;
+}
+
+#demoTowerA {
+  background-image: url("image/TowerA.jpeg");
+  background-size: 100% 100%;
+  display: table-cell;
+  vertical-align: bottom;
+  width: 250px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+#demoTowerB {
+  background-image: url("image/TowerB.jpeg");
+  background-size: 100% 100%;
+  display: table-cell;
+  vertical-align: bottom;
+  width: 250px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+#demoTowerC {
+  background-image: url("image/TowerC.jpeg");
+  background-size: 100% 100%;
+  display: table-cell;
+  vertical-align: bottom;
+  width: 250px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+#startDemobutton {
+  height: 30px;
+  width: 90px;
+  font-size: 12px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+#solveDemoDIV {
+  background-color: #fff2d8;
+  display: table-cell;
+  width: 90px;
+  height: 30px;
+  padding: 5px;
+}
+
+#demoDiskOption {
+  text-align: right;
+  background-color: #fff2d8;
+  display: table-cell;
+  width: 300px;
+  height: 30px;
+  padding-top: 5px;
+  padding-right: 10px;
+}
+
+.demobackButton {
+  height: 50px;
+  width: 200px;
+  font-size: 20px;
+  border-radius: 12px;
+  background-color: #98fb98;
+}
+
+#demoBackbtn {
+  text-align: center;
+  width: 1000px;
+  display: table-cell;
+  height: 30px;
+  padding-left: 10px;
+}
+
+#demoMoveDIV {
+  text-align: center;
+  background-color: #fff2d8;
+  display: table-cell;
+  width: 190px;
+  height: 30px;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+#demoSpeedDIV {
+  background-color: #fff2d8;
+  display: table-cell;
+  width: 150px;
+  height: 30px;
+  padding-top: 5px;
+}
+
+#stop {
+  height: 30px;
+  width: 90px;
+  font-size: 12px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+#stopDemoDiv {
+  background-color: #fff2d8;
+  display: table-cell;
+  width: 100px;
+  height: 30px;
+}
+
+.mainMenuButton {
+  height: 50px;
+  width: 200px;
+  font-size: 20px;
+  border-radius: 12px;
+  background-color: #98fb98;
+}
+
+#play {
+  padding-bottom: 10px;
+}
+
+#settingButton {
+  height: 50px;
+  width: 200px;
+  font-size: 20px;
+  border-radius: 12px;
+  background-color: #98fb98;
+}
+
+#setting {
+  padding-bottom: 10px;
+}
+
+#settingTitle {
+  font-size: 50px;
+  padding-bottom: 50px;
+  font-weight: bold;
+}
+
+#settingContent {
+  border: 1px solid black;
+  background: #ffb878;
+  height: 200px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+#settingsBack {
+  padding-top: 40px;
+}
+
+#diskNum {
+  height: 25px;
+  width: 70px;
+  border: 1px solid black;
+}
+
+.backButton {
+  height: 50px;
+  width: 200px;
+  font-size: 20px;
+  border-radius: 12px;
+  background-color: #98fb98;
+}
+
+#option {
+  padding-bottom: 100px;
+}
+
+#diskColour {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+#ruleTitle {
+  font-size: 50px;
+  padding-bottom: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#rulesButton {
+  height: 50px;
+  width: 200px;
+  font-size: 20px;
+  border-radius: 12px;
+  background-color: #98fb98;
+}
+
+#rules {
+  padding-bottom: 10px;
+}
+
+#ruleMSG {
+  padding: 20px;
+  margin: auto;
+  width: 400px;
+  border: 1px solid black;
+  background: #ffb878;
+}
+
+#ruleBackButton {
+  text-align: center;
+  padding-top: 50px;
+}
+
+#gameContent {
+  background: white;
+  border: 1px solid black;
+  width: 800px;
+  height: 300px;
+}
+
+#mainMenuButton {
+  height: 50px;
+  width: 200px;
+  font-size: 20px;
+  border-radius: 12px;
+  background-color: #98fb98;
+}
+
+select.diskColour {
+  background-color: #a4bdfc;
+  height: 25px;
+  width: 70px;
+}
+
+#diskNumLabel {
+  font-size: 21px;
+}
+
+#diskColourLabel {
+  font-size: 21px;
+}
+
+#mainMenuBtnDIV {
+  padding-top: 5px;
+}
+
+#Rules {
+  border: 1px;
+}
+
+#TowerA {
+  background-image: url("image/TowerA.jpeg");
+  background-size: 100% 100%;
+  display: table-cell;
+  vertical-align: bottom;
+  width: 250px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+#TowerB {
+  background-image: url("image/TowerB.jpeg");
+  background-size: 100% 100%;
+  display: table-cell;
+  vertical-align: bottom;
+  width: 250px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+#TowerC {
+  background-image: url("image/TowerC.jpeg");
+  background-size: 100% 100%;
+  display: table-cell;
+  vertical-align: bottom;
+  width: 250px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+#historyBox {
+  background-image: url("image/history.jpeg");
+  background-size: 100% 100%;
+  display: table-cell;
+  vertical-align: top;
+  width: 250px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+#history {
+  font-size: 12px;
+}
+
+.centeredHistory {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  overflow-y: auto;
+  max-height: 260px;
+}
+
+.historyTitle {
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  overflow-y: auto;
+  max-height: 300px;
+}
+
+#footer {
+  background-color: #fff7de;
+  border: 1px solid black;
+  height: 80px;
+  width: 800px;
+}
+
+#footer2 {
+  background-color: #fff7de;
+  border: 1px solid black;
+  height: 60px;
+  width: 800px;
+}
+
+.content {
+  border: 1px solid black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#move {
+  display: table-cell;
+  width: 200px;
+  height: 30px;
+  padding-top: 5px;
+}
+
+th {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+table {
+  border: 2px solid black;
+}
+
+th, td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+#questionDiv {
+  display: table-cell;
+  width: 700px;
+  height: 30px;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+#scrollbar {
+  display: table-cell;
+  width: 200px;
+  height: 30px;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+#question {
+  padding-left: 15px;
+  font-weight: bold;
+}
+
+#ruleList li{
+  display: list-item;
+
+}
+
+li {
+  display: inline;
+}
+
+li a:hover {
+  background-color: green;
+}
+
+li a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 13px 17px;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightgrey;
+}
+
+body {
+  background: white;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 550;
+}

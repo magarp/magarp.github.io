@@ -1,0 +1,193 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel = "stylesheet" type = "text/css" href ="game.css"/>
+    <script src="game.js"></script>
+		<script src="demo.js"></script>
+
+  </head>
+  <body>
+		<ul id="navigation">
+			<li><a href = "index.html" > Home </a> </li>
+			<li><a href = "play.php"> Play </a> </li>
+		</ul>
+
+  <div id= "mainMenu">
+    <div id= "title"> Tower of Hanoi </div>
+    <div id = "play"><button id="playButton">Play</button></div>
+		<div id = "demo"><button id="demoButton">Demo</button></div>
+    <div id = "rules"><button id="rulesButton" >Rules</button></div>
+    <div id = "setting"><button id="settingButton" >Settings</button></div>
+  </div>
+
+  <div id= "ruleMenu">
+    <div id= "ruleTitle"> Rules </div>
+    <div id = "ruleMSG">
+      <p id = "ruleMessage">
+        The goal of the puzzle is to move all the disks from the leftmost peg to
+        the rightmost peg, adhering to the following rules:
+        <ol id="ruleList">
+          <li>Move only one disk at a time.</li>
+          <li>A larger disk may not be placed on top of a smaller disk.</li>
+          <li>All disks, except the one being moved, must be on a peg.</li>
+        </ol>
+      </p>
+    </div>
+
+    <div id= "ruleBackButton"><button class="backButton">Back</button></div>
+  </div>
+
+  <div id= "settingMenu">
+    <div id= "settingTitle"> Settings </div>
+    <div id ="settingContent">
+      <div id= "diskColour">
+        <label for="diskColour" id ="diskColourLabel" >Disk Colour:  </label>
+          <select class= "diskColour">
+            <option value="#a4bdfc">Blue</option>
+            <option value="#7ae7bf">Green</option>
+            <option value="#fbd75b">Yellow</option>
+            <option value="#ffb878">Orange</option>
+            <option value="#ff887c">Red</option>
+            <option value="#dbadff">Purple</option>
+            <option value="#e1e1e1">Gray</option>
+          </select>
+      </div>
+
+        <div id="option">
+          <!--Creates a drop down list with 7 option with min 1 and max 9 disks -->
+          <label for="numOfDisks" id ="diskNumLabel" >Number of Disk:  </label>
+            <select id= "diskNum" >
+							<option value = "1"> 1 </option>
+							<option value = "2"> 2 </option>
+              <option value = "3"> 3 </option>
+              <option value = "4"> 4 </option>
+              <option value = "5"> 5 </option>
+              <option value = "6"> 6 </option>
+              <option value = "7"> 7 </option>
+              <option value = "8"> 8 </option>
+              <option value = "9"> 9 </option>
+            </select>
+      </div>
+    </div>
+
+    <div id= "settingsBack"><button class="backButton">Back</button></div>
+  </div>
+
+<div id= "demoWrapper" >
+	<h1> Demo </h1>
+	<div id = "demoContent">
+		<div id= "demoHistoryBox">
+			<div><br/><br/></div>
+			<div class= "demoCenteredHistory"><p id= "demoHistory"></p></div>
+		</div>
+
+		<div id="demoTowerA" class="droppable" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+		<div id="demoTowerB" class="droppable" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<div id="demoTowerC" class="droppable" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	</div>
+	<div id="demoMoveDIV"></div>
+	<div id ="demoDiskOption" >
+		<label for="demoDisknumber">Disks:  </label>
+				<select id= "demoDisk" width="20px" onchange="changeDemoDisk(this.value)">
+					<option disabled selected value> Disk </option>
+					<option value = "1"> 1 </option>
+					<option value = "2"> 2 </option>
+					<option value = "3"> 3 </option>
+					<option id="four" disabled value = "4"> 4 </option>
+					<option id="five" disabled value = "5"> 5 </option>
+					<option id="six" disabled value = "6"> 6 </option>
+					<option id="seven" disabled value = "7"> 7 </option>
+					<option id="eight" disabled value = "8"> 8 </option>
+					<option id="nine" disabled value = "9"> 9 </option>
+				</select>
+			</div>
+			<div id ="demoSpeedDIV" >
+				<label for="demoSpeedlabel">Speed:  </label>
+						<select id= "demoSpeed" width="20px">
+							<option value = "500"> Slow </option>
+							<option selected value = "300"> Average </option>
+							<option value = "40"> Fast </option>
+						</select>
+					</div>
+					<div id="solveDemoDIV"><button type="button" id ="startDemobutton" onclick="solve()"> Solution </button></div>
+					<div id="stopDemoDiv"><button type="button" id ="stop" onclick="stopAnimation()"> stop </button></div>
+
+		</br>
+			<div id= "demoBackbtn"><button class="demobackButton">Back</button></div>
+
+</div>
+
+
+  <div id= "gameWrapper">
+    <h1> Tower of Hanoi </h1>
+
+    <div id = "gameContent">
+      <div id= "historyBox">
+        <div><br/><br/></div>
+        <div class= "centeredHistory"><p id= "history"></p></div>
+      </div>
+
+      <div id="TowerA" class="droppable" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+      <div id="TowerB" class="droppable" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div id="TowerC" class="droppable" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+
+    <div id="footer">
+			<div id = "question" > Calculate and Enter the minimum moves required for each disks. </div>
+			<div id="questionDiv"><table id= "questionTable">
+						<tr>
+							<th>Number of disk</th>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+							<td>7</td>
+							<td>8</td>
+							<td>9</td>
+						</tr>
+						<tr>
+							<th>Minimum number of moves</th>
+							<td><input type="text" id="oneDiskMove" maxlength="3" style="width: 25px" onchange="checkAnswer('1', this.value,this.id)"></td>
+							<td><input type="text" id="twoDiskMove" maxlength="3" style="width: 25px" onchange="checkAnswer('2', this.value,this.id)"></td>
+							<td><input type="text" id="threeDiskMove" maxlength="3" style="width: 25px" onchange="checkAnswer('3', this.value,this.id)"></td>
+							<td><input type="text" id="fourDiskMove" maxlength="3" style="width: 25px" onchange="checkAnswer('4', this.value,this.id)"></td>
+							<td><input type="text" id="fiveDiskMove" maxlength="3" style="width: 25px" onchange="checkAnswer('5', this.value,this.id)"></td>
+							<td><input type="text" id="sixDiskMove" maxlength="3" style="width: 25px" onchange="checkAnswer('6', this.value,this.id)"></td>
+							<td><input type="text" id="sevenDiskMove" maxlength="3" style="width: 32px" onchange="checkAnswer('7', this.value,this.id)"></td>
+							<td><input type="text" id="eightDiskMove" maxlength="3" style="width: 32px" onchange="checkAnswer('8', this.value,this.id)"></td>
+							<td><input type="text" id="nineDiskMove" maxlength="3" style="width: 32px" onchange="checkAnswer('9', this.value,this.id)"></td>
+						</tr>
+			</table></div>
+			<div id ="scrollbar" >
+				<label for="newDisknumber">Disks:  </label>
+						<select id= "newDisk" width="20px" onchange="changeDisk(this.value)">
+							<option disabled selected value> Disk </option>
+							<option value = "1"> 1 </option>
+							<option value = "2"> 2 </option>
+							<option value = "3"> 3 </option>
+							<option value = "4"> 4 </option>
+							<option value = "5"> 5 </option>
+							<option value = "6"> 6 </option>
+							<option value = "7"> 7 </option>
+							<option value = "8"> 8 </option>
+							<option value = "9"> 9 </option>
+						</select>
+					</div>
+
+			<div id = "move" ></div>
+
+
+    <div id = "mainMenuBtnDIV"><button class="mainMenuButton">Main Menu</button></div>
+  </div>
+		</div>
+
+
+  </body>
+	<footer>&copy; Copyright 2018, Pawan Magar</footer>
+
+  </html>
